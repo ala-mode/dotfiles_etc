@@ -7,9 +7,12 @@
 	defaultBranch = main
 [alias]
 	lol = log --graph --decorate --oneline --color --all
+	lul = log --graph --oneline --color --all
 	remove = rm --cached
+	f = fetch --all --tags
+	s = status -vv
 [core]
-	editor = ~/.cargo/bin/hx
+	editor = /home/o/.cargo/bin/hx
 	pager = delta
 [interactive]
 	diffFilter = delta --color-only
@@ -17,9 +20,11 @@
 	navigate = true  # use n and N to move between diff sections
 	dark = true
 	side-by-side = true
+	line-numbers = true
 [commit]
 	gpgsign = true
 [merge]
     conflictstyle = diff3
 [diff]
+	colorMoved = default
 	tool = delta
